@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../CDC-DFF-Synchronizers.srcs/sources_1/new/dff-sync.sv" \
+"../../../../CDC-DFF-Synchronizers.srcs/sim_1/new/tb-dff-sync.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
